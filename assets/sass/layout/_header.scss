@@ -1,0 +1,52 @@
+.header{
+    // border: 1px solid red;
+    margin-bottom: 22px;
+    background: #FFF;
+
+    &__content{
+        padding: 18px 0 26px;
+    }
+    &__row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0 10px;
+    }
+    &__icons{
+        display: flex;
+        align-items: center;
+        gap: 0 24px;
+    }
+    &__right{
+        display: flex;
+        align-items: center;
+        gap: 0 24px;
+    }
+    &__menu{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        &.isOpenMenu{
+            display: block;
+        }
+     
+    }
+}
+
+
+@media screen and (min-width:1200px) {
+    .header{
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+        &__burger{
+            display: none;
+        }
+        &__content{
+            padding: 12px 0 16px;
+        }
+    }
+}
+
+
+

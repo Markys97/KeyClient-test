@@ -1,0 +1,107 @@
+.footer{
+    padding-bottom: 68px;
+    padding-top: 22px;
+    
+    &__menu{
+        display: flex;
+        gap:0 20px ;
+        margin-bottom: 25px;
+       
+        &-link{
+            color: #333;
+            font-size: 14px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0.56px;
+        }
+        &-item + &-item{
+            margin-top: 8px;
+        }
+        &-item{
+            &--title{
+                margin-bottom: 16px;
+              .footer__menu-link{
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.64px;
+                text-transform: uppercase;
+              
+              }
+            }
+        }
+
+        &-list{
+            flex:1 1 163px;
+            // border: 1px solid;
+        }
+    }
+    &__news-letter{
+        .input{
+            margin-bottom: 25px;
+        }
+    }
+}
+
+.news-letter{
+ 
+    &__title{
+        max-width: 255px;
+        color:  #333;
+        font-size: 16px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.64px;
+        text-transform: uppercase;
+        margin-bottom: 16px;  
+    }
+    &__wrapper-btn{
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__form-button{
+        padding: 8px 28px;
+        color: #333;
+        font-size: 14px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.56px;
+    }
+}
+
+
+@media screen and (min-width:1200px) {
+    .footer{
+        padding-bottom: 34px;
+        &__menu{
+           
+            gap:0 16px ;
+            margin-bottom: 0;
+            &-list{
+                flex:unset;
+                width:335px;
+            
+            }
+        }
+      
+        &__row{
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+         
+        }
+
+        &__news-letter{
+            flex-shrink: 0;
+           max-width:452px;
+           width: 100%;
+        }
+        
+
+    }
+}
